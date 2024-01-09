@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
 
-function App() {
+import About from './pages/About';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import NavBar from './NavBar';
+
+
+export default function DrawerAppBar() {
+
+  let component;
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home/>;
+      break;
+    case "/about":
+      component = <About/>;
+      break;
+    case "/contact":
+      component = <Contact/>
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar/>
+      <div className>{component}</div>
+    </>
   );
 }
-
-export default App;
