@@ -1,29 +1,33 @@
 import * as React from 'react';
-
+import "./App.css"
 import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import NavBar from './NavBar';
 
 
-export default function DrawerAppBar() {
+export default function App() {
 
-  let component;
+  let component
   switch (window.location.pathname) {
-    case "/":
+    case "/home":
       component = <Home/>;
       break;
     case "/about":
       component = <About/>;
       break;
     case "/contact":
-      component = <Contact/>
+      component = <Contact/>;
+      break;
+    default:
+      component = <Home/>;
+      break;
   }
 
   return (
     <>
-      <NavBar/>
-      <div className>{component}</div>
+       <NavBar/>
+      <div>{component}</div>
     </>
   );
 }
