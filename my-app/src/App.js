@@ -3,8 +3,8 @@ import "./App.css"
 import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import NavBar from './NavBar';
-
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 export default function App() {
 
@@ -25,9 +25,10 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="page">
        <NavBar/>
-      <div>{component}</div>
-    </>
+      <div className="component">{component}</div>
+      <Footer className="footer-container"/>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 /* Navigation Bar */
+import "./NavBar.css"
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -27,11 +28,11 @@ export default function NavBar (){
           <Typography
             variant="h6"
             component="div"
-            sx={{ fontSize: '30px', flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{fontSize: '30px', flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             Kevin Yang
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
             <Button onClick={() => home()} sx={{ color: '#fff' }}>Home</Button>
             <Button onClick={() => about()} sx={{ color: '#fff' }}>About</Button>
             <Button onClick={() => contact()} sx={{ color: '#fff' }}>Contact</Button>
