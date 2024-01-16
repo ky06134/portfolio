@@ -12,7 +12,7 @@ import Box from "@mui/material/Box";
 
 export default function Contact (){
     return(
-        <div className="body"style={{padding: '100px'}}>
+        <div className="body"style={{backgroundImage: url('portfolio-banner.jpeg'), padding: '100px'}}>
             <div className="title">Get In Touch</div>
 
             <Box className='items'>
