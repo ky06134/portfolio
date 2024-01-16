@@ -12,13 +12,14 @@ import Box from "@mui/material/Box";
 
 export default function Contact (){
     return(
-        <div className="body"style={{backgroundImage: url('portfolio-banner.jpeg'), padding: '100px'}}>
+        <div className="body">
+            
             <div className="title">Get In Touch</div>
 
             <Box className='items'>
 
                 <div className="icon">
-                    <PhoneIcon sx={{fontSize:'80px'}}/>
+                    <PhoneIcon sx={{fontSize:'80px', color: 'white'}}/>
                     Phone # 678-900-3354
                 </div> 
                 <Divider orientation="vertical" flexItem/>

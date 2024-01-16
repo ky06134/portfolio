@@ -6,29 +6,62 @@ import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
+import { Routes, Route, useLocation} from "react-router-dom";
+
+import { AnimatePresence, motion } from "framer-motion";
+
+
+
+
+
 export default function App() {
 
-  let component
-  switch (window.location.pathname) {
-    case "/home":
-      component = <Home/>;
-      break;
-    case "/about":
-      component = <About/>;
-      break;
-    case "/contact":
-      component = <Contact/>;
-      break;
-    default:
-      component = <Home/>;
-      break;
-  }
+const blackBox = {
+  initial: {
+    height: "100vh",
+    bottom: 0,
+  },
+  animate: {
+    height: 0,
+    transition: {
+      duration: 1.5,
+      ease: [0.87, 0, 0.13, 1],
+    },
+  },
+};
+
+const InitialTransition = () => {
+  return (
+    <div className="absolute inset-0 flex items-center justify-center">
+      <motion.div
+        className="relative z-50 w-full bg-black"
+        initial="initial"
+        animate="animate"
+          variants={blackBox}
+      />      
+    </div>
+  );
+};
+
+const location = useLocation();
+
 
   return (
-    <div className="page">
-       <NavBar/>
-      <div className="component">{component}</div>
-      <Footer className="footer-container"/>
-    </div>
+    
+      <div className="page"> 
+          <NavBar/>
+          <AnimatePresence>
+            <Routes location={location} key={location.pathname} >
+              <Route path="/" element={<Home/>} />
+              <Route path="/contact" element={<Contact/>} />
+              <Route path="/about" element={<About/>} />
+            </Routes>
+        </AnimatePresence>
+       
+        <Footer/>
+     </div>
+     
+     
+    
   );
 }

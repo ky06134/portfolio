@@ -5,7 +5,10 @@
 
 .App-body {
   color: #282c34;
-  background-color: white;
+}
+
+.page{
+  background-image: url("../public/portfolio-banner.png");
 }
 
 

@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 export default function NavBar (){
 
     async function home() {
-        window.location.href = `/home`;
+        window.location.href = `/`;
     }
     async function about() {
         window.location.href = `/about`;
