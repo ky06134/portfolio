@@ -7,22 +7,14 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 import { Routes, Route, useLocation} from "react-router-dom";
-
 import { AnimatePresence, motion } from "framer-motion";
 
-
-
-
-
-export default function App() {
-
-const blackBox = {
+const text = {
   initial: {
-    height: "100vh",
-    bottom: 0,
+    y: 40,
   },
   animate: {
-    height: 0,
+    y: 80,
     transition: {
       duration: 1.5,
       ease: [0.87, 0, 0.13, 1],
@@ -30,35 +22,91 @@ const blackBox = {
   },
 };
 
+const textContainer = {
+  initial: {
+    opacity: 1,
+  },
+  animate: {
+    opacity: 0,
+    transition: {
+      duration: 0.25,
+      when: "afterChildren",
+    },
+  },
+};
+
+const blackBox = {
+  initial: {
+    height: "100vh",
+    bottom: 0,
+    
+  },
+  animate: {
+    height: 0,
+    transition: {
+      when: "afterChildren",
+      duration: 1.5,
+      ease: [0.87, 0, 0.13, 1],
+      
+    },
+  },
+};
+
 const InitialTransition = () => {
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
-      <motion.div
-        className="relative z-50 w-full bg-black"
+      <motion.div        
+        style={{position: 'absolute', zIndex: "50", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", backgroundColor: "black"}}
         initial="initial"
         animate="animate"
-          variants={blackBox}
-      />      
-    </div>
+        variants={blackBox}
+        onAnimationStart={() => document.body.classList.add("overflow-hidden")}
+        onAnimationComplete={() =>
+          document.body.classList.remove("overflow-hidden")
+        }
+      >      
+        <motion.svg variants={textContainer} style= {{position: 'absolute', zIndex: "50", display: 'flex'}}>
+          <pattern
+            id="pattern"
+            patternUnits="userSpaceOnUse"
+            width={750}
+            height={800}
+            style={{color: 'white'}}
+          >
+            <rect style={{width: "100%", height: "100%", fill: "currentColor"}}/>
+            <motion.rect variants={text} style= {{width: "100%", height: "100%", color: "#718096", fill: "currentColor"}}/>
+          </pattern>
+          <text
+            text-anchor="middle"
+            x="50%"
+            y="50%"
+            style={{ fill: "url(#pattern)", fontSize: "2.25rem", fontWeight: "700"}}
+          >
+            Loading...
+          </text>
+        </motion.svg>
+      </motion.div>
   );
 };
 
+export default function App() {
+
 const location = useLocation();
 
-
   return (
-    
-      <div className="page"> 
-          <NavBar/>
+      <div className='container'> 
           <AnimatePresence>
+            <InitialTransition/>
+            <NavBar/>
             <Routes location={location} key={location.pathname} >
               <Route path="/" element={<Home/>} />
               <Route path="/contact" element={<Contact/>} />
               <Route path="/about" element={<About/>} />
             </Routes>
+            <Footer/>
+            
         </AnimatePresence>
-       
-        <Footer/>
+        
+        
      </div>
      
      

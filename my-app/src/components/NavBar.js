@@ -23,12 +23,12 @@ export default function NavBar (){
   return (
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar sx={{backgroundColor: "#282c34"}} component="nav">
+      <AppBar sx={{backgroundColor: "#282c34", zIndex: "25"}} component="nav">
         <Toolbar>
           <Typography
             variant="h6"
             component="div"
-            sx={{fontSize: '30px', flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{textAlign: "left", fontSize: '30px', flexGrow: 1, display: { xs: 'none', sm: 'block'} }}
           >
             Kevin Yang
           </Typography>
