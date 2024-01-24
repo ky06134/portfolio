@@ -1,4 +1,4 @@
-/* about page */
+/* Home page */
 import "./Home.css"
 import Divider from "@mui/material/Divider";
 
@@ -22,6 +22,26 @@ export default function Home (){
                 </div>
         </div>
         <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+
+        <div style={{ justifyContent: "center", display: "flex", flexDirection: "row", alignContent: 'center', alignItems: 'center', backgroundColor: 'black'}}>
+            <button 
+            className="nav-button"
+            onClick={()=> window.scrollTo({top:800, behavior: "smooth"})}
+            >
+            Career
+            </button>
+            <button 
+            className="nav-button"
+            onClick={()=> window.scrollTo({top:1600, behavior: "smooth"})}
+            >Skills
+            </button>
+            <button 
+            className="nav-button"
+            onClick={()=> window.scrollTo({top:2600, behavior: "smooth"})}
+            >Education</button>
+            <button className="nav-button">Work Experience</button>
+        </div>
+
         <div className="career-bio">
             <div className="title">Career Goals</div>
              
@@ -69,7 +89,6 @@ export default function Home (){
                         <p>- Python (1+ years) </p>
                     </div>
                 </div>
-                
             </div>
             <div className="split">
                 <div className="left-box">
@@ -89,19 +108,50 @@ export default function Home (){
                         <p>- Chinese (speak)</p>
                     </div>
                 </div>
-                
             </div>
         </div>
+
+        <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+
         <div className="education-bio">
             <div className="title">Education</div>
-            <div className="text-body">
-                <p>Luella High School</p>
-                <p>High School diploma</p>
-
+            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+                <div className="uga-education"/>
+                  <div className="right-education">  
+                </div>
+                <div className="text-body">
+                        <p style={{fontSize: "25px"}}>University of Georgia</p>
+                        <p>Bachelor Degree in Computer Science</p>
+                        <p>GPA: 3.4</p>
+                        <p style={{color: 'lightGray'}}>August 2020 - Current</p>
+                        <p>Activities and Societies: UGA ACM, OpenSource, UGA HACKS</p>
+                </div>
             </div>
-
-
+            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+                <div className="luella-education"/>
+                  <div className="right-education">  
+                </div>
+                <div className="text-body">
+                        <p style={{fontSize: "25px"}}>Luella High School</p>
+                        <p>High School diploma</p>
+                        <p>GPA: 4.0 unweighted</p>
+                        <p style={{color: 'lightGray'}}>August 2016 - May 2020</p>
+                        <p>Activities and Societies: Steam, Beta club, Nation Honors Science Society, Band, Tennis, Math team, Robotics</p>
+                </div>
+            </div>
         </div>
+
+        <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+
+        <div className="work-bio">
+            <div className="title">Work Experience</div>
+            <div className="text-body">
+                138 Fish Market
+            </div>
+        </div>
+
+
+        
         </div>
     );
 
