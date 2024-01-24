@@ -1,14 +1,12 @@
-
+html{
+  background-color: black;
+}
 .container {
-  padding-bottom: 0px;
-  overflow: hidden;
-  height: 100vh;
+  padding-top: 40px;
   text-align: center;
+  background-color: #282c34;
 }
 
-.App-body {
-  color: #282c34;
-}
 
 .page{
   margin: 0;

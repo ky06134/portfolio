@@ -1,0 +1,98 @@
+
+.split {
+    display: flex;
+    flex-direction: Row;
+    
+}
+
+.left-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/portfolio-banner.png");
+    height: 90vh;
+    width: 45%;
+}
+
+.right-pane {
+    font-family: 'oswald';
+
+    color: white;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    height: 90vh;
+    width: 55%;
+}
+
+.pane-profile-image {
+    
+    background-color: white;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border-color: black;
+    border-width:9px;
+    background-image: url("../../public/image0.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+
+.pane-text {
+    padding: 40px;
+    font-family: 'oswald';
+    position: relative;
+    font-size: 25px;
+}
+
+.career-bio {
+    
+    font-family: 'oswald';
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    background-color: #282c34;
+    padding-bottom: 40px;
+}
+.text-body {
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    padding-top: 60px
+;
+}
+.skills-bio {
+    font-family: 'oswald';
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    background-color: #282c34;
+    padding-bottom: 40px;
+}
+.education-bio{
+    font-family: 'oswald';
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    background-color: #282c34;
+    padding-bottom: 40px;
+}
+
+.left-box {
+    width: 50%;
+    margin: 20px;
+}
+
+.right-box{
+    width: 50%;
+    margin: 20px;
+
+}

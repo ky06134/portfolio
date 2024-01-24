@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "./App.css"
-import About from './pages/About';
 import Home from './pages/Home';
+import Project from './pages/Project';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -14,7 +14,7 @@ const text = {
     y: 40,
   },
   animate: {
-    y: 80,
+    y: 86,
     transition: {
       duration: 1.5,
       ease: [0.87, 0, 0.13, 1],
@@ -64,13 +64,13 @@ const InitialTransition = () => {
           document.body.classList.remove("overflow-hidden")
         }
       >      
-        <motion.svg variants={textContainer} style= {{position: 'absolute', zIndex: "50", display: 'flex'}}>
+        <motion.svg variants={textContainer} style= {{position: 'absolute', zIndex: "50", display: 'flex', padding: "5px"}}>
           <pattern
             id="pattern"
             patternUnits="userSpaceOnUse"
             width={750}
             height={800}
-            style={{color: 'white'}}
+            style={{color: 'white', padding: "10px"}}
           >
             <rect style={{width: "100%", height: "100%", fill: "currentColor"}}/>
             <motion.rect variants={text} style= {{width: "100%", height: "100%", color: "#718096", fill: "currentColor"}}/>
@@ -93,21 +93,21 @@ export default function App() {
 const location = useLocation();
 
   return (
-      <div className='container'> 
+      <> 
           <AnimatePresence>
             <InitialTransition/>
             <NavBar/>
             <Routes location={location} key={location.pathname} >
               <Route path="/" element={<Home/>} />
               <Route path="/contact" element={<Contact/>} />
-              <Route path="/about" element={<About/>} />
+              <Route path="/project" element={<Project/>} />
             </Routes>
             <Footer/>
             
         </AnimatePresence>
         
         
-     </div>
+     </>
      
      
     

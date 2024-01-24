@@ -5,3 +5,13 @@
     align-items: center;
     text-align: center;
 }
+
+.changeNavbar {
+    background-color: black;
+    z-index: 25;
+}
+
+.navbar {
+    background-color: black;
+    z-index: 25;
+}

@@ -11,8 +11,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Box from "@mui/material/Box";
 
 export default function Contact (){
+
     return(
+    <div style={{paddingTop: "90px",backgroundColor: "black"}}>
         <div className="body">
+            
             
             <div className="title">Get In Touch</div>
 
@@ -31,11 +34,12 @@ export default function Contact (){
 
                 <div className="icon">
                     <LinkedInIcon sx={{fontSize:'90px'}}/>
-                    <Link href="https://www.linkedin.com/in/kevin-yang-449611238/">LinkedIn</Link>
+                    <Link target="_blank" href="https://www.linkedin.com/in/kevin-yang-449611238/">LinkedIn</Link>
                 </div>
             </Box>
             
         </div>
+    </div>
     );
 
 }
