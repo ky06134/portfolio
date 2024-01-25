@@ -28,7 +28,7 @@ export default function Home (){
             className="nav-button"
             onClick={()=> window.scrollTo({top:800, behavior: "smooth"})}
             >
-            Career
+            Career Goals
             </button>
             <button 
             className="nav-button"
@@ -39,7 +39,10 @@ export default function Home (){
             className="nav-button"
             onClick={()=> window.scrollTo({top:2600, behavior: "smooth"})}
             >Education</button>
-            <button className="nav-button">Work Experience</button>
+            <button 
+            className="nav-button"
+            onClick={()=> window.scrollTo({top:3600, behavior: "smooth"})}
+            >Work Experience</button>
         </div>
 
         <div className="career-bio">
@@ -94,11 +97,12 @@ export default function Home (){
                 <div className="left-box">
                     <div className="text-body" style={{backgroundColor: "black"}}>
                         <p>Programming Tools / Librarys:</p>
-                        <p>Framer Motion</p>
-                        <p>Visual Studio Code</p>
-                        <p>Eclipse</p>
-                        <p>Material UI</p>
-                        <p>GitHub</p>
+                        <p>- Framer Motion</p>
+                        <p>- Visual Studio Code</p>
+                        <p>- Eclipse</p>
+                        <p>- Material UI</p>
+                        <p>- GitHub</p>
+                        <p>- Axios</p>
                     </div>
                 </div>
                 <div className="right-box">
@@ -143,13 +147,31 @@ export default function Home (){
 
         <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
 
-        <div className="work-bio">
+        <div className="education-bio">
             <div className="title">Work Experience</div>
-            <div className="text-body">
-                138 Fish Market
+            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+                <div className="fish"/>
+                  <div className="right-education">  
+                </div>
+                <div className="text-body">
+                        <p style={{fontSize: "25px"}}>138 Fish Market</p>
+                        <p>Position: General Manager</p>
+                        <p style={{color: 'lightGray'}}>2010 - 2020</p>
+                        <p>Description: Worked on hiring and teaching new employees, while also working the Cash register, preparing seafood and checking shipments</p>
+                </div>
+            </div>
+            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+                <div className="canes"/>
+                  <div className="right-education">  
+                </div>
+                <div className="text-body">
+                        <p style={{fontSize: "25px"}}>Raising Cane's</p>
+                        <p>Position: Part Time: Drive Thru</p>
+                        <p style={{color: 'lightGray'}}>Jan 2024 - current</p>
+                        <p>Description: Worked the Cash register and took peoples orders</p>
+                </div>
             </div>
         </div>
-
 
         
         </div>

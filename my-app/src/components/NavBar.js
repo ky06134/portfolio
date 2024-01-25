@@ -15,7 +15,7 @@ export default function NavBar (){
         window.location.href = `/`;
     }
     async function project() {
-        window.location.href = `/about`;
+        window.location.href = `/projects`;
     }
     async function contact() {
         window.location.href = `/contact`;
