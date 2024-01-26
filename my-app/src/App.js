@@ -27,6 +27,7 @@ const textContainer = {
     opacity: 1,
   },
   animate: {
+    height: 0,
     opacity: 0,
     transition: {
       duration: 0.25,

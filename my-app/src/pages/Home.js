@@ -23,7 +23,7 @@ export default function Home (){
         </div>
         <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
 
-        <div style={{ justifyContent: "center", display: "flex", flexDirection: "row", alignContent: 'center', alignItems: 'center', backgroundColor: 'black'}}>
+        <div style={{ zIndex: 30, justifyContent: "center", display: "flex", flexDirection: "row", alignContent: 'center', alignItems: 'center', backgroundColor: 'black'}}>
             <button 
             className="nav-button"
             onClick={()=> window.scrollTo({top:800, behavior: "smooth"})}
