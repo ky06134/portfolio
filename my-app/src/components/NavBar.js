@@ -35,7 +35,7 @@ export default function NavBar (){
   return (
     <Box sx={{ display: 'flex'}}>
     <CssBaseline/>
-      <AppBar sx={changeColor ? {zIndex: "25", padding: "10px", backgroundColor: "#282c34"} : {zIndex: "25", padding: "10px", backgroundColor: "black"}} component="nav">
+      <AppBar sx={changeColor ? {fontFamily: 'oswald', zIndex: "25", padding: "10px", color: "#02a9f7", backgroundColor: "#89d6fb"} : {zIndex: "25", padding: "10px", backgroundColor: "black"}} component="nav">
         <Toolbar>
           <Typography
             variant="h6"
@@ -44,10 +44,10 @@ export default function NavBar (){
           >
             Kevin Yang
           </Typography>
-          <Box sx={{ textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
-            <Button onClick={() => home()} sx={{ color: '#fff' }}>Home</Button>
-            <Button onClick={() => project()} sx={{ color: '#fff' }}>Projects/Events</Button>
-            <Button onClick={() => contact()} sx={{ color: '#fff' }}>Contact</Button>
+          <Box sx={{fontFamily: "oswald", textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
+            <Button onClick={() => home()} sx={{ color: "#02a9f7"}}>Home</Button>
+            <Button onClick={() => project()} sx={{ color: "#02a9f7"}}>Projects/Events</Button>
+            <Button onClick={() => contact()} sx={{ color: "#02a9f7"}}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>

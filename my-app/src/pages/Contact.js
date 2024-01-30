@@ -14,25 +14,25 @@ export default function Contact (){
 
     return(
     <div style={{paddingTop: "90px",backgroundColor: "black"}}>
-        <div className="body">
+        <div className="c-body">
             
             
-            <div className="title">Get In Touch</div>
+            <div className="c-title">Get In Touch</div>
 
-            <Box className='items'>
+            <Box className='c-items'>
 
-                <div className="icon">
+                <div className="c-icon">
                     <PhoneIcon sx={{fontSize:'90px', color: 'white'}}/>
                     Phone # 678-900-3354
                 </div> 
                 <Divider orientation="vertical" flexItem/>
-                <div className="icon">
+                <div className="c-icon">
                     <EmailIcon sx={{fontSize:'90px'}}/>
                     Email: Kyang504@gmail.com
                 </div>
                 <Divider orientation="vertical" flexItem/>
 
-                <div className="icon">
+                <div className="c-icon">
                     <LinkedInIcon sx={{fontSize:'90px'}}/>
                     <Link target="_blank" href="https://www.linkedin.com/in/kevin-yang-449611238/">LinkedIn</Link>
                 </div>

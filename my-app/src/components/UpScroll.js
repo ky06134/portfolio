@@ -1,3 +1,4 @@
+import "./UpScroll.css"
 import React from "react";
 import { useState } from "react";
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
@@ -27,10 +28,12 @@ export default function UpScroll () {
      };  
 window.addEventListener('scroll', toggleVisible);
 return ( 
-    <IconButton onClick={scrollToTop} 
-     style={{display: visible ? 'inline' : 'none'}}
-     >
-    <ArrowUpwardIcon/>
-     </IconButton>
+    <div className="button-container">
+        <IconButton onClick={scrollToTop} 
+        style={{display: visible ? 'inline' : 'none'}}
+        >
+        <ArrowUpwardIcon sx={{fontSize: '30px', color: '#02a9f7'}}/>
+        </IconButton>
+    </div>
   );
 }

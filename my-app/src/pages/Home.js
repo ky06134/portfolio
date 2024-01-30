@@ -1,7 +1,7 @@
 /* Home page */
 import "./Home.css"
+import UpScroll from "../components/UpScroll";
 import Divider from "@mui/material/Divider";
-
 
 export default function Home (){
     return(
@@ -14,19 +14,20 @@ export default function Home (){
                 </div>
             </div>
                 <div className="right-pane">
-                    <div className="title">Welcome to my Website</div>
+                    <div className="h-title">Welcome to my Website</div>
                     <div className="pane-text">
                     Thank You for taking the time to checkout my Bio. My Name is Kevin Yang. 
                     I am a Computer Science Major at the University of Georgia. 
-                    As a senior at UGA I am currently looking for a full Time job. Below are some information about my Career goals, Education, and Skills.</div>
+                    As a Senior at UGA, I am currently looking for a full Time job. Below are some information about my Career goals, Education, and Skills.</div>
                 </div>
         </div>
-        <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+        <UpScroll/>
+        <Divider orientation="horizontal" sx= {{backgroundColor: "#89d6fb"}} flexItem/>
 
-        <div style={{ zIndex: 30, justifyContent: "center", display: "flex", flexDirection: "row", alignContent: 'center', alignItems: 'center', backgroundColor: 'black'}}>
+        <div style={{ position: "sticky", top: '70px', display: "flex", flexDirection: "row", alignContent: 'center', alignItems: 'center', backgroundColor: "#89d6fb"}}>
             <button 
             className="nav-button"
-            onClick={()=> window.scrollTo({top:950, behavior: "smooth"})}
+            onClick={()=> window.scrollTo({top:900, behavior: "smooth"})}
             >
             Career Goals
             </button>
@@ -41,12 +42,12 @@ export default function Home (){
             >Education</button>
             <button 
             className="nav-button"
-            onClick={()=> window.scrollTo({top:3750, behavior: "smooth"})}
+            onClick={()=> window.scrollTo({top:3790, behavior: "smooth"})}
             >Work Experience</button>
         </div>
 
         <div className="career-bio">
-            <div className="title">Career Goals</div>
+            <div className="h-title">Career Goals</div>
              
 
             <div className="text-body"> Since I was a teenager, I was fascinated by the amazing things technology has made possible. 
@@ -56,11 +57,11 @@ export default function Home (){
             My passion for computer science stems from desire to help others and create an amazing user experience.
             That is why, during my stay at the University of Georgia, I focused my attention to Computer Science. 
             As I learned the basics of coding from ground up, I eventually learned to code a website and work with databases. 
-            During my journey, I found a passion for front-end engineering and design. 
+            During my journey, I found a passion for Software development. I loved creating Websites, Apps and learning new tech.
             </div>
 
             <div className="text-body">
-                <p>Below are some of the positions I am looking for in a job:</p>
+                <p>Below are some of the positions I am currently looking for:</p>
                 <p>- Front-End Engineer</p>
                 <p>- Front-End Developer</p>
                 <p>- Web Developer</p>
@@ -70,9 +71,9 @@ export default function Home (){
             </div>
 
         </div>
-        <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+        <Divider orientation="horizontal" sx= {{backgroundColor: "#89d6fb"}} flexItem/>
         <div className="skills-bio">
-            <div className="title">Skills</div>
+            <div className="h-title">Skills</div>
             <div className= "split">
                 <div className="left-box">
                     <div className="text-body" style={{backgroundColor: "black"}}>
@@ -115,11 +116,11 @@ export default function Home (){
             </div>
         </div>
 
-        <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+        <Divider orientation="horizontal" sx= {{backgroundColor: "#89d6fb"}} flexItem/>
 
         <div className="education-bio">
-            <div className="title">Education</div>
-            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+            <div className="h-title">Education</div>
+            <div className="split" style={{ margin: '30px', backgroundColor: "#89d6fb"}}>
                 <div className="uga-education"/>
                   <div className="right-education">  
                 </div>
@@ -127,11 +128,11 @@ export default function Home (){
                         <p style={{fontSize: "25px"}}>University of Georgia</p>
                         <p>Bachelor Degree in Computer Science</p>
                         <p>GPA: 3.4</p>
-                        <p style={{color: 'lightGray'}}>August 2020 - Current</p>
+                        <p style={{color: 'black'}}>August 2020 - Current</p>
                         <p>Activities and Societies: UGA ACM, OpenSource, UGA HACKS</p>
                 </div>
             </div>
-            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+            <div className="split" style={{ margin: '30px', backgroundColor: "#89d6fb"}}>
                 <div className="luella-education"/>
                   <div className="right-education">  
                 </div>
@@ -139,35 +140,35 @@ export default function Home (){
                         <p style={{fontSize: "25px"}}>Luella High School</p>
                         <p>High School diploma</p>
                         <p>GPA: 4.0 unweighted</p>
-                        <p style={{color: 'lightGray'}}>August 2016 - May 2020</p>
+                        <p style={{color: 'black'}}>August 2016 - May 2020</p>
                         <p>Activities and Societies: Steam, Beta club, Nation Honors Science Society, Band, Tennis, Math team, Robotics</p>
                 </div>
             </div>
         </div>
 
-        <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
+        <Divider orientation="horizontal" sx= {{backgroundColor: "#89d6fb"}} flexItem/>
 
         <div className="education-bio">
-            <div className="title">Work Experience</div>
-            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+            <div className="h-title">Work Experience</div>
+            <div className="split" style={{ margin: '30px', backgroundColor: "#89d6fb"}}>
                 <div className="fish"/>
                   <div className="right-education">  
                 </div>
                 <div className="text-body">
                         <p style={{fontSize: "25px"}}>138 Fish Market</p>
                         <p>Position: General Manager</p>
-                        <p style={{color: 'lightGray'}}>2010 - 2020</p>
+                        <p style={{color: 'black'}}>2010 - 2020</p>
                         <p>Description: Worked on hiring and teaching new employees, while also working the Cash register, preparing seafood and checking shipments</p>
                 </div>
             </div>
-            <div className="split" style={{ margin: '30px', backgroundColor: "black"}}>
+            <div className="split" style={{ margin: '30px', backgroundColor: "#89d6fb"}}>
                 <div className="canes"/>
                   <div className="right-education">  
                 </div>
                 <div className="text-body">
                         <p style={{fontSize: "25px"}}>Raising Cane's</p>
                         <p>Position: Part Time: Drive Thru</p>
-                        <p style={{color: 'lightGray'}}>Jan 2024 - current</p>
+                        <p style={{color: 'black'}}>Jan 2024 - current</p>
                         <p>Description: Worked the Cash register and took peoples orders</p>
                 </div>
             </div>

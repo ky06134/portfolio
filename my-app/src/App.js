@@ -5,7 +5,6 @@ import Project from './pages/Project';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import UpScroll from './components/UpScroll';
 import { Routes, Route, useLocation} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -108,7 +107,6 @@ const location = useLocation();
               <Route path="/project" element={<Project/>} />
             </Routes>
             <Footer/>
-            <UpScroll/>
             
         </AnimatePresence>
         
