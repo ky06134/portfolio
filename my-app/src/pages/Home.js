@@ -18,7 +18,7 @@ export default function Home (){
                     <div className="pane-text">
                     Thank You for taking the time to checkout my Bio. My Name is Kevin Yang. 
                     I am a Computer Science Major at the University of Georgia. 
-                    As a senior at UGA I am currently looking for a front-end related job. Below are some information about my Career goals, Education, and Skills.</div>
+                    As a senior at UGA I am currently looking for a full Time job. Below are some information about my Career goals, Education, and Skills.</div>
                 </div>
         </div>
         <Divider orientation="horizontal" sx= {{backgroundColor: "black"}} flexItem/>
@@ -26,22 +26,22 @@ export default function Home (){
         <div style={{ zIndex: 30, justifyContent: "center", display: "flex", flexDirection: "row", alignContent: 'center', alignItems: 'center', backgroundColor: 'black'}}>
             <button 
             className="nav-button"
-            onClick={()=> window.scrollTo({top:800, behavior: "smooth"})}
+            onClick={()=> window.scrollTo({top:950, behavior: "smooth"})}
             >
             Career Goals
             </button>
             <button 
             className="nav-button"
-            onClick={()=> window.scrollTo({top:1600, behavior: "smooth"})}
+            onClick={()=> window.scrollTo({top:1700, behavior: "smooth"})}
             >Skills
             </button>
             <button 
             className="nav-button"
-            onClick={()=> window.scrollTo({top:2600, behavior: "smooth"})}
+            onClick={()=> window.scrollTo({top:2750, behavior: "smooth"})}
             >Education</button>
             <button 
             className="nav-button"
-            onClick={()=> window.scrollTo({top:3600, behavior: "smooth"})}
+            onClick={()=> window.scrollTo({top:3750, behavior: "smooth"})}
             >Work Experience</button>
         </div>
 
