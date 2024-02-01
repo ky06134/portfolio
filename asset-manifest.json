@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1493a0d1.css",
-    "main.js": "/portfolio/static/js/main.fc4b9528.js",
+    "main.js": "/portfolio/static/js/main.b07d9b3b.js",
     "static/js/787.d4aba7ab.chunk.js": "/portfolio/static/js/787.d4aba7ab.chunk.js",
     "static/media/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg": "/portfolio/static/media/alexandre-debieve-FO7JIlwjOtU-unsplash.adfab862f29561d82abc.jpg",
     "static/media/luca-bravo-XJXWbfSo2f0-unsplash.jpg": "/portfolio/static/media/luca-bravo-XJXWbfSo2f0-unsplash.c93b61047910ffc4cf87.jpg",
@@ -26,11 +26,11 @@
     "static/media/oswald-vietnamese-400-normal.woff2": "/portfolio/static/media/oswald-vietnamese-400-normal.a3465efd849ea2f438ef.woff2",
     "index.html": "/portfolio/index.html",
     "main.1493a0d1.css.map": "/portfolio/static/css/main.1493a0d1.css.map",
-    "main.fc4b9528.js.map": "/portfolio/static/js/main.fc4b9528.js.map",
+    "main.b07d9b3b.js.map": "/portfolio/static/js/main.b07d9b3b.js.map",
     "787.d4aba7ab.chunk.js.map": "/portfolio/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1493a0d1.css",
-    "static/js/main.fc4b9528.js"
+    "static/js/main.b07d9b3b.js"
   ]
 }
