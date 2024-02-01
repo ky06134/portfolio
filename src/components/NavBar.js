@@ -15,10 +15,10 @@ export default function NavBar (){
         window.location.href = `/portfolio`;
     }
     async function project() {
-        window.location.href = `/portfolio/project`;
+        window.location.href = `/project`;
     }
     async function contact() {
-        window.location.href = `/portfolio/contact`;
+        window.location.href = `/contact`;
     }
 
     const [changeColor, setChangeColor] = useState(false);
