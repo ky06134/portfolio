@@ -37,8 +37,7 @@ export default function Project (){
 
             <div className="p-container">
                 <Divider orientation="horizontal" sx= {{ backgroundColor: "#89d6fb"}} flexItem/>
-                    <div className="project-image-hack8"/>
-                
+                <div className="project-image-hack8"/>
                 <div className="p-text">
                     <p style={{fontSize: '25px'}}>TappedIn</p>
                     <p>Date: Feb 2023</p>
