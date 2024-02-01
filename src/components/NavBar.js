@@ -12,7 +12,7 @@ import { useState } from "react";
 export default function NavBar (){
 
     async function home() {
-        window.location.href = `/portfolio`;
+        window.location.href = `/`;
     }
     async function project() {
         window.location.href = `/project`;
