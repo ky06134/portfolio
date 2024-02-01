@@ -32,15 +32,12 @@
 }
 
 .project-image-hack8 {
-    margin-left: 200px;
-    margin-right:200px;
+    background-position: center;
     height:150px;
     background-image: url("../../public/hack8.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
 
 .divider {
     min-width: 10%;
