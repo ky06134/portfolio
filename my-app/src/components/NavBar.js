@@ -15,7 +15,7 @@ export default function NavBar (){
         window.location.href = `/`;
     }
     async function project() {
-        window.location.href = `/projects`;
+        window.location.href = `/project`;
     }
     async function contact() {
         window.location.href = `/contact`;
@@ -33,21 +33,21 @@ export default function NavBar (){
     
 
   return (
-    <Box sx={{ display: 'flex'}}>
+    <Box sx={{display: 'flex'}}>
     <CssBaseline/>
-      <AppBar sx={changeColor ? {fontFamily: 'oswald', zIndex: "25", padding: "10px", color: "#02a9f7", backgroundColor: "#89d6fb"} : {zIndex: "25", padding: "10px", backgroundColor: "black"}} component="nav">
+      <AppBar sx={changeColor ? {zIndex: "25", padding: "10px", color: "#02a9f7", backgroundColor: "#89d6fb"} : {zIndex: "25", padding: "10px", backgroundColor: "black"}} component="nav">
         <Toolbar>
           <Typography
             variant="h6"
             component="div"
-            sx={{textAlign: "left", fontSize: '30px', flexGrow: 1, display: { xs: 'none', sm: 'block'} }}
+            sx={{color:"#02a9f7",fontFamily:"oswald", textAlign: "left", fontSize: '30px', flexGrow: 1, display: { xs: 'none', sm: 'block'} }}
           >
             Kevin Yang
           </Typography>
-          <Box sx={{fontFamily: "oswald", textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
-            <Button onClick={() => home()} sx={{ color: "#02a9f7"}}>Home</Button>
-            <Button onClick={() => project()} sx={{ color: "#02a9f7"}}>Projects/Events</Button>
-            <Button onClick={() => contact()} sx={{ color: "#02a9f7"}}>Contact</Button>
+          <Box sx={{textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
+            <Button onClick={() => home()} sx={{fontSize: "20px" ,fontFamily: "oswald", color: "#02a9f7"}}>Home</Button>
+            <Button onClick={() => project()} sx={{fontSize: "20px",fontFamily: "oswald",color: "#02a9f7"}}>Projects/Events</Button>
+            <Button onClick={() => contact()} sx={{fontSize: "20px",fontFamily: "oswald", color: "#02a9f7"}}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>

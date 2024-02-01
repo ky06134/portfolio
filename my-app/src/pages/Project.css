@@ -1,0 +1,82 @@
+.p-body {
+    font-family: "oswald";
+    padding-top: 100px;
+    color: black;
+    background-color: black;
+}
+
+.p-title {
+    font-family: "oswald";
+    font-size: 30px;
+}
+
+.city-image {
+    padding-left: 15px;
+    font-size: 50px;
+    color: white;
+    height:50vh;
+    background-image: url("../../public/pexels-pixabay-302820.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p-container {
+    padding: 20px;
+    background-color: #d4f0fc;
+}
+
+.p-text {
+    font-family: "oswald";
+    color: black;
+    font-size: 20px;
+}
+
+.project-image-hack8 {
+    margin-left: 200px;
+    margin-right:200px;
+    height:150px;
+    background-image: url("../../public/hack8.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.divider {
+    min-width: 10%;
+    max-width: 80%;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.p-split {
+    padding-left: 60px;
+    padding-bottom: 20px;
+    background-color: #02a9f7;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.project-image-ugamarket {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    height:300px;
+    background-image: url("../../public/ugamarket.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

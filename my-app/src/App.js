@@ -58,7 +58,7 @@ const blackBox = {
 const InitialTransition = () => {
   return (
       <motion.div        
-        style={{position: 'absolute', zIndex: "50", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", backgroundColor: "black"}}
+        style={{position: 'absolute', zIndex: "50", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", backgroundColor: "#89d6fb"}}
         initial="initial"
         animate="animate"
         variants={blackBox}
@@ -76,7 +76,7 @@ const InitialTransition = () => {
             style={{color: 'white', padding: "10px"}}
           >
             <rect style={{width: "100%", height: "100%", fill: "currentColor"}}/>
-            <motion.rect variants={text} style= {{width: "100%", height: "100%", color: "#718096", fill: "currentColor"}}/>
+            <motion.rect variants={text} style= {{width: "100%", height: "100%", color: "#02a9f7", fill: "currentColor"}}/>
           </pattern>
           <text
             text-anchor="middle"
