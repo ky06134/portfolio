@@ -11,6 +11,7 @@ import { useState } from "react";
 
 export default function NavBar (){
 
+  /*
     async function home() {
         window.location.href = `/`;
     }
@@ -20,6 +21,7 @@ export default function NavBar (){
     async function contact() {
         window.location.href = `/contact`;
     }
+    */
 
     const [changeColor, setChangeColor] = useState(false);
     const changeNavColor = () => {
@@ -45,12 +47,13 @@ export default function NavBar (){
             Kevin Yang
           </Typography>
           <Box sx={{textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
-            <Button onClick={() => home()} sx={{fontSize: "20px" ,fontFamily: "oswald", color: "#02a9f7"}}>Home</Button>
-            <Button onClick={() => project()} sx={{fontSize: "20px",fontFamily: "oswald",color: "#02a9f7"}}>Projects/Events</Button>
-            <Button onClick={() => contact()} sx={{fontSize: "20px",fontFamily: "oswald", color: "#02a9f7"}}>Contact</Button>
+            <Button onClick={()=> window.scrollTo({top:0, behavior: "smooth"})} sx={{fontSize: "20px" ,fontFamily: "oswald", color: "#02a9f7"}}>Welcome</Button>
+            <Button onClick={()=> window.scrollTo({top:4780, behavior: "smooth"})} sx={{fontSize: "20px",fontFamily: "oswald",color: "#02a9f7"}}>Projects/Events</Button>
+            <Button onClick={()=> window.scrollTo({top:8800, behavior: "smooth"})} sx={{fontSize: "20px",fontFamily: "oswald", color: "#02a9f7"}}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>
     </Box>
   );
   }
+  

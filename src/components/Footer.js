@@ -6,6 +6,8 @@ import "./Footer.css"
 
 export default function Footer() {
     return(
-    <div className="footer"> Kevin Yang @2024</div>
+    <div className="footer"> 
+        <p>Kevin Yang @2024</p>
+    </div>
     );
 }

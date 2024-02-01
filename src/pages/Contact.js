@@ -13,7 +13,7 @@ import Box from "@mui/material/Box";
 export default function Contact (){
 
     return(
-    <div style={{paddingTop: "90px",backgroundColor: "black"}}>
+    <div style={{backgroundColor: "black"}}>
         <div className="c-body">
             
             

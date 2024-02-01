@@ -5,6 +5,7 @@ import Project from './pages/Project';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import { HashRouter } from 'react-router-dom';
 import { Routes, Route, useLocation} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -100,12 +101,10 @@ const location = useLocation();
           <AnimatePresence>
             <InitialTransition/>
             <NavBar/>
+              <Home/>
+              <Project/>
+            <Contact/>
             
-            <Routes location={location} key={location.pathname} >
-              <Route exact path="/" element={<Home/>} />
-              <Route path="/contact" element={<Contact/>} />
-              <Route path="/project" element={<Project/>} />
-            </Routes>
             <Footer/>
             
         </AnimatePresence>
