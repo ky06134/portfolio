@@ -102,7 +102,7 @@ const location = useLocation();
             <NavBar/>
             
             <Routes location={location} key={location.pathname} >
-              <Route path="/" element={<Home/>} />
+              <Route path="/portfolio" element={<Home/>} />
               <Route path="/contact" element={<Contact/>} />
               <Route path="/project" element={<Project/>} />
             </Routes>
