@@ -103,8 +103,8 @@ const location = useLocation();
             
             <Routes location={location} key={location.pathname} >
               <Route path="/portfolio" element={<Home/>} />
-              <Route path="/portfolio/contact" element={<Contact/>} />
-              <Route path="/portfolio/project" element={<Project/>} />
+              <Route path="/contact" element={<Contact/>} />
+              <Route path="/project" element={<Project/>} />
             </Routes>
             <Footer/>
             
