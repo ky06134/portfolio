@@ -6,19 +6,13 @@ import Divider from "@mui/material/Divider";
 export default function Home (){
     return(
         <div className= "fontstyle">
-        <div style={{paddingTop: "90px",backgroundColor: "black"}}></div>
-        <div className="split">
-            <div className ="left-pane">
-                <div className="pane-profile-image" >
-                </div>
+        <div style={{paddingTop: "90px",backgroundColor: "black"}}>
+            <div className="h-title">Welcome To My Website</div>
+            <div className="pane-text" style={{color: 'white'}}>
+            My Name is Kevin Yang. 
+            I am a Computer Science Major at the University of Georgia. 
+            As a Senior at UGA, I am currently looking for a full Time job. Below are some information about my Career goals, Education, and Skills.
             </div>
-                <div className="right-pane">
-                    <div className="h-title">Welcome To My Website</div>
-                    <div className="pane-text" style={{color: 'white'}}>
-                    Thank You for taking the time to checkout my Bio. My Name is Kevin Yang. 
-                    I am a Computer Science Major at the University of Georgia. 
-                    As a Senior at UGA, I am currently looking for a full Time job. Below are some information about my Career goals, Education, and Skills.</div>
-                </div>
         </div>
         <UpScroll/>
         <Divider orientation="horizontal" sx= {{backgroundColor: "#89d6fb"}} flexItem/>
@@ -47,8 +41,6 @@ export default function Home (){
 
         <div className="career-bio">
             <div className="h-title">CAREER GOALS</div>
-             
-
             <div className="text-body"> Since I was a teenager, I was fascinated by the amazing things technology has made possible. 
             In all fields, we find the distribution of media, such as image, sounds, and text. 
             Even my 80 year old grandparents who has never used the internet in the past, has now learned to surf the web for videos to watch. 
