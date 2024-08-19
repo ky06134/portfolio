@@ -22,18 +22,18 @@ export default function Contact (){
             <Box className='c-items'>
 
                 <div className="c-icon">
-                    <PhoneIcon sx={{fontSize:'90px', color: 'white'}}/>
+                    <PhoneIcon sx={{fontSize:'8vw', color: 'white'}}/>
                     Phone # 678-900-3354
                 </div> 
                 <Divider orientation="vertical" flexItem/>
                 <div className="c-icon">
-                    <EmailIcon sx={{fontSize:'90px'}}/>
+                    <EmailIcon sx={{fontSize:'8vw'}}/>
                     Email: Kyang504@gmail.com
                 </div>
                 <Divider orientation="vertical" flexItem/>
 
                 <div className="c-icon">
-                    <LinkedInIcon sx={{fontSize:'90px'}}/>
+                    <LinkedInIcon sx={{fontSize:'8vw'}}/>
                     <Link target="_blank" href="https://www.linkedin.com/in/kevin-yang-449611238/">LinkedIn</Link>
                 </div>
             </Box>
