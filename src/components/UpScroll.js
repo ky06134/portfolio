@@ -32,7 +32,7 @@ return (
         <IconButton onClick={scrollToTop} 
         style={{display: visible ? 'inline' : 'none'}}
         >
-        <ArrowUpwardIcon sx={{fontSize: '30px', color: '#02a9f7'}}/>
+        <ArrowUpwardIcon sx={{fontSize: '3vw', color: '#02a9f7'}}/>
         </IconButton>
     </div>
   );

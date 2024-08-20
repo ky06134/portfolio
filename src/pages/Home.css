@@ -153,7 +153,7 @@
 
 .nav-button {
     font-family: 'oswald';
-    font-size: 25px;
+    font-size: clamp(14px, 4vw, 25px);
     color: black;
     padding: 0;
     background: none;
@@ -163,7 +163,7 @@
 }
 
 .nav-button:hover {
-    font-size: 25px;
+    font-size: clamp(14px, 4vw, 25px);
     color: gray;
     padding: 0;
     background: none;

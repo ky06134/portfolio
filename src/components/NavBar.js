@@ -42,14 +42,14 @@ export default function NavBar (){
           <Typography
             variant="h6"
             component="div"
-            sx={{color:"#02a9f7",fontFamily:"oswald", textAlign: "left", fontSize: '4vw', flexGrow: 1, display: { xs: 'true', sm: 'block'} }}
+            sx={{color:"#02a9f7",fontFamily:"oswald", textAlign: "left", fontSize: 'clamp(14px, 4vw, 40px)', flexGrow: 1, display: { xs: 'true', sm: 'block'} }}
           >
-            Kevin Yang
+            KEVIN YANG
           </Typography>
           <Box sx={{textAlign: 'right', display: { xs: 'true', sm: 'block' } }}>
-            <Button onClick={()=> window.scrollTo({top:0, behavior: "smooth"})} sx={{fontSize: "3vw" ,fontFamily: "oswald", color: "#02a9f7"}}>Welcome</Button>
-            <Button onClick={()=> window.scrollTo({top:4780, behavior: "smooth"})} sx={{fontSize: "3vw",fontFamily: "oswald",color: "#02a9f7"}}>Projects/Events</Button>
-            <Button onClick={()=> window.scrollTo({top:8800, behavior: "smooth"})} sx={{fontSize: "3vw",fontFamily: "oswald", color: "#02a9f7"}}>Contact</Button>
+            <Button onClick={()=> window.scrollTo({top:0, behavior: "smooth"})} sx={{fontSize: "clamp(14px, 4vw, 30px)",fontFamily: "oswald", color: "#02a9f7"}}>Welcome</Button>
+            <Button onClick={()=> window.scrollTo({top:4780, behavior: "smooth"})} sx={{fontSize: "clamp(14px, 4vw, 30px)",fontFamily: "oswald",color: "#02a9f7"}}>Projects/Events</Button>
+            <Button onClick={()=> window.scrollTo({top:8800, behavior: "smooth"})} sx={{fontSize: "clamp(14px, 4vw, 30px)",fontFamily: "oswald",color: "#02a9f7"}}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>
