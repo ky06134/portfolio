@@ -12,7 +12,7 @@ export default function Home (){
             <div className="pane-text" style={{color: 'white'}}>
             My Name is Kevin Yang. 
             I am a Computer Science Major looking for opportunities. 
-            As a Graduate at UGA with a Bachelor in Computer Science, Below are some information about my Career Goals, Projects, Education, and Skills.
+            As a Graduate at UGA with a Bachelor in Computer Science, I am aiming to grow my career by applying what I have learned. Below are some information about my Career Goals, Projects, Education, and Skills.
             </div>
         </div>
         <UpScroll/>
