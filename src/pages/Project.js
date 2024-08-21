@@ -9,7 +9,6 @@ export default function Project (){
         <div className="p-body">
             <div className="city-image">Projects/Events</div> 
             <div className="p-title">
-                Projects
             </div>
             
             <div className="p-title" style={{paddingLeft:"20px", color: 'white', paddingBottom: '20px'}}>Below are some of my favorite Projects</div>
@@ -20,7 +19,7 @@ export default function Project (){
                 <div className="p-text">
                     <p>Date: Fall 2023</p>
                     <p>Tools: ReactJS, MaterialUI, Axios, MySQL</p>
-                    <p>During the Fall semester of 2023 at the University of Georgia I took Software Engineering. 
+                    <p>During the Fall semester of 2023 at the University of Georgia, I took Software Engineering. 
                         During which, we were assigned a project to create a movie booking website.
                     </p>
                     <p>The movie booking website includes options to create users, both admins and customers. 
@@ -64,16 +63,10 @@ export default function Project (){
                 <Divider orientation="horizontal" sx= {{ backgroundColor: "#89d6fb"}} flexItem/>
                 
                 <div className="p-title">
-                    <p>ACM OPEN SOURCE PROJECT</p>
-                    
+                    <p>ACM OPEN SOURCE PROJECT: UGA Marketplace </p> 
                 </div>
-                <div className="p-split">
-                    <div style={{fontSize: '25px', width:"30%"}}>
-                        <p>UGA Marketplace</p>
-                        <p style={{fontSize:'20px'}}>Date: Feb 2023</p>
-                    </div>
-                    <div className="project-image-ugamarket"/>
-                </div>
+                <div className="project-image-ugamarket"/>
+                    <p style={{fontSize:'clamp(15px, 3vw, 25px'}}>Date: Feb 2023</p>
                 <div className="p-text">
 
                     <p>Tools: ReactJS, PSQL, Docker </p>
