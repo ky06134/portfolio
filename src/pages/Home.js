@@ -118,6 +118,15 @@ export default function Home (){
                     <p>
                         Algorithms (CSCI 4470)
                     </p>
+                    <p>
+                        Cloud Computing (CSCI 4795)
+                    </p>
+                    <p>
+                        Data Science (CSCI 3360)
+                    </p>
+                    <p>
+                        Distributed Computing Systems (CSCI 4780)
+                    </p>
                 </div>
             </div>
 
