@@ -11,9 +11,8 @@ export default function Home (){
             <div className="profile-picture"/>
             <div className="pane-text" style={{color: 'white'}}>
             My Name is Kevin Yang. 
-            I am a Computer Science Major at the University of Georgia. 
-            As a Graduate at UGA with a Bachelor in Computer Science, 
-            I am currently looking for a full time job. Below are some information about my Career Goals, Projects, Education, and Skills.
+            I am a Computer Science Major looking for opportunities. 
+            As a Graduate at UGA with a Bachelor in Computer Science, Below are some information about my Career Goals, Projects, Education, and Skills.
             </div>
         </div>
         <UpScroll/>
@@ -92,9 +91,33 @@ export default function Home (){
                 <div style={{paddingLeft: '3vw', color: 'black'}}>
                     <p>Bachelor Degree in Computer Science</p>
                     <p>GPA: 3.4</p>
-                    <p style={{color: 'black'}}>August 2020 - Current</p>
+                    <p style={{color: 'black'}}>August 2020 - May 2024</p>
                     <p>Activities and Societies: UGA ACM, OpenSource, UGA HACKS</p>
-                    <p>Relavant Clases </p>
+                    <p>Relevant Classes: </p>
+                    <p>
+                        Software Engineering (CSCI 4050)
+                    </p>
+                    <p>
+                        Software Development (CSCI 1302)
+                    </p>
+                    <p>
+                        Systems Programing (CSCI 1730)
+                    </p>
+                    <p>
+                        Data Structures (CSCI 2720)
+                    </p>
+                    <p>
+                        Computer Graphics (CSCI 4810)
+                    </p>
+                    <p>
+                        Discrete Mathmatics (CSCI 4370)
+                    </p>
+                    <p>
+                        Intro to Theory or Computing (CSCI 2670)
+                    </p>
+                    <p>
+                        Algorithms (CSCI 4470)
+                    </p>
                 </div>
             </div>
 
