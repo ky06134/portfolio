@@ -48,7 +48,7 @@ export default function NavBar (){
           </Typography>
           <Box sx={{textAlign: 'right', display: { xs: 'true', sm: 'block' } }}>
             <Button onClick={()=> window.scrollTo({top:0, behavior: "smooth"})} sx={{fontSize: "clamp(14px, 4vw, 30px)",fontFamily: "oswald", color: "#02a9f7"}}>Welcome</Button>
-            <Button onClick={()=> window.scrollTo({top:10000, behavior: "smooth"})} sx={{fontSize: "clamp(14px, 4vw, 30px)",fontFamily: "oswald",color: "#02a9f7"}}>Contact</Button>
+            <Button onClick={()=> window.scrollTo({top:99999999, behavior: "smooth"})} sx={{fontSize: "clamp(14px, 4vw, 30px)",fontFamily: "oswald",color: "#02a9f7"}}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>
