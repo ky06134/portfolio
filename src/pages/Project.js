@@ -8,8 +8,6 @@ export default function Project (){
     return(
         <div className="p-body">
             <div className="city-image">Projects/Events</div> 
-            <div className="p-title">
-            </div>
             
             <div className="p-title" style={{paddingLeft:"20px", color: 'white', paddingBottom: '20px'}}>Below are some of my favorite Projects</div>
 

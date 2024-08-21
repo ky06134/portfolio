@@ -12,7 +12,7 @@
 
 .city-image {
     padding-left: 15px;
-    font-size: Clamp(15px, 5vw, 50px);
+    font-size: Clamp(20px, 6vw, 50px);
     color: white;
     height:50vh;
     background-image: url("../../public/pexels-pixabay-302820.jpg");
@@ -32,10 +32,11 @@
 }
 
 .project-image-hack8 {
-    height:clamp(250px,12vw,300px);
+    height:clamp(150px,12vw,300px);
     background-image: url("../../public/hack8.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -60,15 +61,6 @@
     position: absolute;
 }
 
-.p-split {
-    padding-left: 60px;
-    padding-bottom: 20px;
-    background-color: #02a9f7;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-}
 .project-image-ugamarket {
     height: clamp(350px, 12vw, 500px);
     background-size: contain;

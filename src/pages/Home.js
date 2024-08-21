@@ -95,37 +95,37 @@ export default function Home (){
                     <p>Activities and Societies: UGA ACM, OpenSource, UGA HACKS</p>
                     <p>Relevant Classes: </p>
                     <p>
-                        Software Engineering (CSCI 4050)
+                        - Software Engineering (CSCI 4050)
                     </p>
                     <p>
-                        Software Development (CSCI 1302)
+                        - Software Development (CSCI 1302)
                     </p>
                     <p>
-                        Systems Programing (CSCI 1730)
+                        - Systems Programing (CSCI 1730)
                     </p>
                     <p>
-                        Data Structures (CSCI 2720)
+                        - Data Structures (CSCI 2720)
                     </p>
                     <p>
-                        Computer Graphics (CSCI 4810)
+                        - Computer Graphics (CSCI 4810)
                     </p>
                     <p>
-                        Discrete Mathmatics (CSCI 4370)
+                        - Discrete Mathmatics (CSCI 4370)
                     </p>
                     <p>
-                        Intro to Theory or Computing (CSCI 2670)
+                        - Intro to Theory or Computing (CSCI 2670)
                     </p>
                     <p>
-                        Algorithms (CSCI 4470)
+                        - Algorithms (CSCI 4470)
                     </p>
                     <p>
-                        Cloud Computing (CSCI 4795)
+                        - Cloud Computing (CSCI 4795)
                     </p>
                     <p>
-                        Data Science (CSCI 3360)
+                        - Data Science (CSCI 3360)
                     </p>
                     <p>
-                        Distributed Computing Systems (CSCI 4780)
+                        - Distributed Computing Systems (CSCI 4780)
                     </p>
                 </div>
             </div>
