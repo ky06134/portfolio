@@ -5,7 +5,7 @@
   @keyframes aurora {
     from {
       background-position:
-        0% 50%,
+        50% 50%,
         50% 50%;
     }
     to {

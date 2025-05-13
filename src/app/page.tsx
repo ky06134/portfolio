@@ -17,6 +17,10 @@ export default function Home() {
         }}
         className="relative flex flex-col gap-4 items-start justify-start px-4"
       >
+        
+        <div className="">
+        Contact
+        </div>
         <div className="text-1xl md:text-7xl font-bold dark:text-white text-center">
           Hi There, I'm Kevin Yang
         </div>
