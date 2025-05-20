@@ -11,6 +11,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconHome,
+  IconDownload,
 } from "@tabler/icons-react";
 
 export default function Home() {
@@ -82,15 +83,15 @@ export default function Home() {
             <Button
               onClick={onButtonClick}
               borderRadius="1.75rem"
-              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className="hover:bg-cyan-200 bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
-              My Resume
+              My Resume <IconDownload className="pl-2"/>
             </Button>
           </div>
         </motion.div>
       </AuroraBackground>
       <div>
-        <div className="relative flex h-full w-full items-center justify-center bg-white dark:bg-black">
+        <div className="relative flex h-full items-center justify-center bg-white dark:bg-black">
           <div
             className={cn(
               "absolute inset-0",
@@ -102,11 +103,11 @@ export default function Home() {
           {/* Radial gradient for the container to give a faded look */}
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
           <div className="h-full flex flex-col">
-            <div className="h-screen mt-20 z-20 flex flex-row items-center justify-center">
-              <img src="IMG_5239.jpg" height={400} width={400}></img>
-              <div className="ml-20 relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-6xl">
+            <div className="h-auto mt-20 z-20 flex flex-col md:flex-row items-center justify-center px-4 gap-8">
+              <img src="IMG_5239.jpg" className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto"/>
+              <div className="text-center md:text-left md:ml-12 px-4 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent py-6 text-3xl sm:text-4xl md:text-6xl font-bold">
                 A Bit About Me
-                <p className=" max-w-xl relative bg-black bg-clip-text py-8 text-4xl text-transparent sm:text-2xl">
+                <p className="mt-4 max-w-xl text-base sm:text-lg md:text-xl lg:text-2xl text-black dark:text-white">
                   I'm a Front-End Software Developer with 4+ years of experience building scalable web applications using React.
                   I have a passion in designing clean, efficient code and creating an amazing web experience for end users.
                   I'm particularly passionate about learning new ways to improve my skills.
@@ -114,56 +115,56 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="pb-10 z-20 flex flex-col items-center">
-              <div className="ml-20 relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-6xl">
+            <div className="py-10 z-20 flex flex-col items-center">
+              <div className="relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text pt-8 text-4xl font-bold text-transparent sm:text-6xl">
                 Tech Stack
               </div>
-              <p className="pb-10 max-w-xl relative bg-black bg-clip-text text-4xl text-transparent font-bold sm:text-2xl">
+              <p className="mt-4 max-w-xl text-base sm:text-lg md:text-xl lg:text-2xl text-black dark:text-white font-bold pb-8">
                 Tools I have been working with recently
               </p>
-              <div className="flex flex-row">
-                <div className="flex flex-col items-center pr-10">
-                  <img src="React.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">React</p>
+              <div className="flex flex-wrap justify-center gap-6">
+                <div className="flex flex-col items-center w-24">
+                  <img src="React.png" className="w-12 h-12 mb-2" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">React</p>
                 </div>
-                <div className="flex flex-col items-center pr-10">
-                  <img src="Next.js.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Next.js</p>
+                <div className="flex flex-col items-center w-24">
+                  <img src="Next.js.png" className="w-12 h-12 mb-2 bg-white" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">Next.js</p>
                 </div>
-                <div className="flex flex-col items-center pr-10">
-                  <img src="Tailwind CSS.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Tailwind CSS</p>
+                <div className="flex flex-col items-center w-24">
+                  <img src="Tailwind CSS.png" className="w-12 h-12 mb-2" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">Tailwind CSS</p>
                 </div>
-                <div className="flex flex-col items-center pr-10">
-                  <img src="Material UI.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Material UI</p>
+                <div className="flex flex-col items-center w-24">
+                  <img src="Material UI.png" className="w-12 h-12 mb-2" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">Material UI</p>
                 </div>
-                <div className="flex flex-col items-center pr-10">
-                  <img src="Python.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Python.js</p>
+                <div className="flex flex-col items-center w-24">
+                  <img src="Python.png" className="w-12 h-12 mb-2" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">Python</p>
                 </div>
-                <div className="flex flex-col items-center pr-10">
-                  <img src="Node.js.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Node.js</p>
+                <div className="flex flex-col items-center w-24">
+                  <img src="Node.js.png" className="w-12 h-12 mb-2" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">Node.js</p>
                 </div>
-                <div className="flex flex-col items-center pr-10">
-                  <img src="GitLab.png" height={50} width={50} />
-                  <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">GitLab</p>
+                <div className="flex flex-col items-center w-24">
+                  <img src="GitLab.png" className="w-12 h-12 mb-2" height={50} width={50} />
+                  <p className="text-center text-sm sm:text-base text-black dark:text-white">GitLab</p>
                 </div>
               </div>
 
               <div className="flex flex-row pt-6">
                 <div className="flex flex-col items-center pr-10">
                 <img src="Azure Devops.png" height={50} width={50} />
-                <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Azure Devops</p>
+                <p className="text-center text-sm sm:text-base text-black dark:text-white">Azure Devops</p>
               </div>
               <div className="flex flex-col items-center pr-10">
                 <img src="Jira.png" height={50} width={50} />
-                <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Jira</p>
+                <p className="text-center text-sm sm:text-base text-black dark:text-white">Jira</p>
               </div>
               <div className="flex flex-col items-center pr-10">
                 <img src="Git.png" height={50} width={50} />
-                <p className=" max-w-xl relative bg-black bg-clip-text text-4xl text-transparent sm:text-2xl">Git</p>
+                <p className="text-center text-sm sm:text-base text-black dark:text-white">Git</p>
               </div>
               </div>
               
