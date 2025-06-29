@@ -129,7 +129,7 @@ export default function Home() {
                     <img src="Next.js.png" className="w-12 h-12 mb-2 bg-white" height={50} width={50} />
                     <p className="text-center text-sm sm:text-base text-black">Next.js</p>
                   </div>
-                  <div className="flex flex-col items-center w-24">
+                  <div className="flex flex-col items-center max-w-24">
                     <img src="Tailwind CSS.png" className="w-12 h-12 mb-2" height={50} width={50} />
                     <p className="text-center text-sm sm:text-base text-black">Tailwind CSS</p>
                   </div>
@@ -149,15 +149,15 @@ export default function Home() {
                     <img src="GitLab.png" className="w-12 h-12 mb-2" height={50} width={50} />
                     <p className="text-center text-sm sm:text-base text-black">GitLab</p>
                   </div>
-                  <div className="flex flex-col items-center pr-10">
+                  <div className="flex flex-col items-center w-24">
                     <img src="Azure Devops.png" height={50} width={50} />
                     <p className="text-center text-sm sm:text-base text-black">Azure Devops</p>
                   </div>
-                  <div className="flex flex-col items-center pr-10">
+                  <div className="flex flex-col items-center w-24">
                     <img src="Jira.png" height={50} width={50} />
                     <p className="text-center text-sm sm:text-base text-black">Jira</p>
                   </div>
-                  <div className="flex flex-col items-center pr-10">
+                  <div className="flex flex-col items-center w-24">
                     <img src="Git.png" height={50} width={50} />
                     <p className="text-center text-sm sm:text-base text-black">Git</p>
                   </div>
