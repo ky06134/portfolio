@@ -101,7 +101,7 @@ export default function Home() {
             {/* Radial gradient for the container to give a faded look */}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <div className="h-full flex flex-col">
-              <div className="h-auto mt-20 z-20 flex flex-col md:flex-row items-center justify-center px-4 gap-8">
+              <div className="h-auto mt-20 z-10 flex flex-col md:flex-row items-center justify-center px-4 gap-8">
                 <img src="IMG_5239.jpg" className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto" />
                 <div className="text-center md:text-left md:ml-12 px-4 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent py-6 text-3xl sm:text-4xl md:text-6xl font-bold">
                   A Bit About Me
@@ -113,7 +113,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="py-10 z-20 flex flex-col items-center">
+              <div className="py-10 z-10 flex flex-col items-center">
                 <div className="relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text pt-8 text-4xl font-bold text-transparent sm:text-6xl">
                   Tech Stack
                 </div>
