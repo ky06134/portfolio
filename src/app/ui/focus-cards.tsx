@@ -11,9 +11,7 @@ export const Card = React.memo(
     index,
     hovered,
     setHovered,
-    modalOpen,
     setModalOpen,
-    modalContent,
     setModalContent,
   }: {
     card: any;
@@ -29,7 +27,7 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-60 lg:h-96 w-full transition-all duration-300 ease-out",
+        "rounded-lg relative bg-gray-100 overflow-hidden h-60 md:h-60 lg:h-96 w-full transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
@@ -47,7 +45,7 @@ export const Card = React.memo(
         <div className="items-start flex justify-center xl:items-center h-full">
           <button
             onClick={() => { setModalOpen(true), setModalContent(card) }}
-            className="text-lg px-4 py-1 text-white hover:border-2 hover:rounded-2xl transition-all duration-300 drop-shadow-2xl"
+            className="font-medium text-lg px-4 py-1 text-white text-shadow-lg hover:border-2 hover:rounded-2xl transition-all duration-300 drop-shadow-2xl"
           >
             Explore
           </button>
@@ -55,7 +53,7 @@ export const Card = React.memo(
 
         {/* Title bottom-left */}
         <div className="absolute bottom-8 left-4">
-          <div className="pr-1 text-xl md:text-xl font-medium bg-clip-text text-white bg-gradient-to-b from-neutral-50 to-neutral-200 drop-shadow-2xl">
+          <div className="pr-1 text-xl md:text-xl font-bold bg-clip-text text-white text-shadow-lg bg-gradient-to-b from-neutral-50 to-neutral-200 drop-shadow-2xl">
             {card.title}
           </div>
         </div>
@@ -69,7 +67,12 @@ Card.displayName = "Card";
 
 type Card = {
   title: string;
-  src: string;
+  subtitle: string;
+  description: string;
+  contributors: React.ReactNode;
+  video: string;
+  src: any;
+  tools: React.ReactNode;
 };
 
 type ModalProps = {
@@ -78,6 +81,31 @@ type ModalProps = {
   modalContent: any;
 };
 
+export default function YouTubeEmbed({ src }: { src: string }) {
+  if (src === "") {
+    return
+  }
+  return (
+    <div style={{ position: "relative", paddingBottom: "45.25%", height: 0 }}>
+      <iframe
+        src={src}
+        title="YouTube video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          paddingTop: 20,
+        }}
+      ></iframe>
+    </div>
+  );
+}
+
 
 export function Modal({ modalOpen, modalContent, setModalOpen }: ModalProps) {
   if (modalOpen != true) {
@@ -85,8 +113,28 @@ export function Modal({ modalOpen, modalContent, setModalOpen }: ModalProps) {
   }
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm overflow-y-auto">
-      <div className="relative z-10 bg-white dark:bg-neutral-900 rounded-lg p-6 shadow-2xl w-[80%] min-h-[80%] ring-1 ring-gray-300">
-        {modalContent.title}
+      <div className=" pb-25 relative z-10 bg-white rounded-lg px-15 pt-10 shadow-2xl w-[80%] h-[90%] ring-1 ring-gray-300 overflow-y-auto">
+        <h1 className="text-4xl font-bold pb-3">
+          {modalContent.title}
+        </h1>
+        <h2 className="text-lg">
+          {modalContent.subtitle}
+        </h2>
+        <h2 className="text-lg">
+          Contributors: {modalContent.contributors}
+        </h2>
+        <hr className="h-px mt-8 bg-gray-300 border-0" />
+        <YouTubeEmbed src={modalContent.video} />
+        <div className="flex flex-col items-center py-5">
+          <h2 className="lg:text-xl font-bold pb-10">Tools:</h2>
+          {modalContent.tools}
+        </div>
+        <hr className="h-px my-8 bg-gray-300 border-0" />
+
+        <div className="">
+          <h2 className="lg:text-xl font-bold pr-2">Details:</h2>
+          {modalContent.description}
+        </div>
         <div className="absolute top-3 right-4 group">
           <IconCircleX className="group-hover:hidden w-10 h-10" onClick={() => setModalOpen(false)} />
           <IconCircleXFilled className="hidden group-hover:block w-10 h-10" onClick={() => setModalOpen(false)} />
