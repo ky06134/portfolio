@@ -107,11 +107,11 @@ export default function ProjectsPage() {
   return (
     <div className="p-10">
       <div className="w-full h-full items-center pb-20 rounded-2xl">
-            <h1 className="pt-15 text-center bg-black bg-clip-text text-3xl sm:text-4xl md:text-6xl">
+            <h1 className="font-bold font-serif pt-15 text-center bg-black bg-clip-text text-3xl sm:text-4xl md:text-5xl">
               My Projects
             </h1>
-            <p className="mt-4 pb-15 text-center bg-clip-text text-lg sm:text-xl md:text-xl">
-              Projects I have worked on throughout my life. See what I have accomplished so far.
+            <p className="font-mono mt-4 pb-25 text-center bg-clip-text text-lg sm:text-xl md:text-xl">
+              Projects I have worked on throughout my life. See what I've accomplished so far.
             </p>
           </div>
 

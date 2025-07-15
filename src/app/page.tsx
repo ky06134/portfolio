@@ -81,7 +81,7 @@ return (
         <div className="text-4xl md:text-6xl font-bold">
           Hi There, I'm Kevin Yang
         </div>
-        <div className="font-extralight text-base md:text-3xl py-4">
+        <div className="font-mono font-extralight text-base md:text-3xl py-4">
           Software Developer Based Around Atlanta, GA
         </div>
         <div className="flex h-40 w-full items-center justify-center">
@@ -105,9 +105,9 @@ return (
         <div className="h-full flex flex-col">
           <div className="h-auto mt-20 z-10 flex flex-col md:flex-row items-center justify-center px-4 gap-8 pb-15">
             <img src="IMG_5239.jpg" className="rounded-2xl w-full max-w-sm md:max-w-md lg:max-w-lg h-auto" />
-            <div className="text-center md:text-left md:ml-12 px-4 bg-black bg-clip-text py-6 text-3xl sm:text-4xl md:text-6xl ">
+            <div className="font-serif text-center md:text-left md:ml-12 px-4 bg-black bg-clip-text py-6 text-3xl sm:text-4xl md:text-6xl ">
               A Bit About Me
-              <p className="mt-4 max-w-xl text-base sm:text-lg md:text-xl lg:text-2xl text-black ">
+              <p className="font-sans mt-4 max-w-xl text-base sm:text-lg md:text-xl lg:text-2xl text-black ">
                 I'm a Front-End Software Developer with experience building scalable web applications using React.
                 I have a passion in designing clean, efficient code and creating an amazing web experience for end users.
                 I'm particularly passionate about learning new ways to improve my skills.
@@ -115,11 +115,11 @@ return (
               </p>
             </div>
           </div>
-          <div className="py-10 z-10 flex flex-col items-center lg:border-2 rounded-sm">
+          <div className="mb-20 py-10 z-10 flex flex-col items-center lg:border-2 lg:border-gray-100 drop-shadow-md rounded-lg">
             <div className="relative bg-black bg-clip-text text-4xl sm:text-4xl">
               Tech Stack
             </div>
-            <p className="mt-4 max-w-xl sm:text-lg md:text-xl lg:text-xl text-black pb-8">
+            <p className="font-mono mt-4 max-w-xl sm:text-lg md:text-xl lg:text-xl text-black pb-8">
               Tools I have been working with recently
             </p>
             <div className="flex flex-wrap max-w-5xl justify-center gap-6">
@@ -164,9 +164,7 @@ return (
                 <p className="text-center text-sm sm:text-base text-black">Git</p>
               </div>
             </div>
-          </div>
-          <hr className="lg:h-px my-8 bg-gray-300 border-0" />
-          
+          </div>          
         </div>
       </div>
     </div>
