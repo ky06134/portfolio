@@ -6,8 +6,6 @@ import { AuroraBackground } from "./ui/aurora-backgrounds";
 import { FloatingDock } from "./ui/floating-dock";
 import { cn } from "./libs/utils";
 import { Button } from "./ui/stateful-button";
-import { FocusCards } from "./ui/focus-cards";
-
 
 import {
   IconBrandGithub,

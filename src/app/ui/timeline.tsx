@@ -6,32 +6,32 @@ import {
   motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
- 
+
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
 }
- 
+
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
- 
+
   useEffect(() => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
       setHeight(rect.height);
     }
   }, [ref]);
- 
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start 10%", "end 50%"],
   });
- 
+
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
- 
+
   return (
     <div
       className="w-full bg-white font-sans md:px-10"
@@ -41,11 +41,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="font-serif font-bold text-4xl mb-4 text-black max-w-4xl">
           Career History
         </h2>
-        <p className="font-mono text-neutral-700 text-lg max-w-sm">
+        <p className="font-mono mt-4 bg-clip-text text-lg sm:text-xl md:text-xl">
           Here&apos;s a timeline of my journey.
         </p>
       </div>
- 
+
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
@@ -60,7 +60,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.title}
               </h3>
             </div>
- 
+
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
