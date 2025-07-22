@@ -110,8 +110,8 @@ export default function ProjectsPage() {
             <h1 className="font-bold font-serif pt-15 text-center bg-black bg-clip-text text-3xl sm:text-4xl md:text-5xl">
               My Projects
             </h1>
-            <p className="font-mono mt-4 pb-25 text-center bg-clip-text text-lg sm:text-xl md:text-xl">
-              Projects I have worked on throughout my life. See what I've accomplished so far.
+            <p className="font-mono mt-4 text-center bg-clip-text text-lg sm:text-xl md:text-xl">
+              A List of Projects I have worked on throughout my life. See what I've accomplished so far.
             </p>
           </div>
 

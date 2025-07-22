@@ -113,7 +113,7 @@ return (
               </p>
             </div>
           </div>
-          <div className="mb-20 py-10 z-10 flex flex-col items-center lg:border-2 lg:border-gray-100 drop-shadow-md rounded-lg">
+          <div className="mb-20 py-10 z-10 flex flex-col items-center">
             <div className="relative bg-black bg-clip-text text-4xl sm:text-4xl">
               Tech Stack
             </div>
