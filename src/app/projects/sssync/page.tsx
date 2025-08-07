@@ -3,33 +3,33 @@ import Tools from "@/app/ui/tools";
 
 export default function Sssync() {
 
-  const tools = ["react"]
+  const tools = ["react", "git", "github", "linear", "Figma"]
 
   const media = [
-  {
-    id: 1,
-    type: 'youtube' as const,
-    src: 'https://www.youtube.com/embed/k_Ip3h0agso',
-  },
-  {
-    id: 2,
-    type: 'image' as const,
-    src: "/sssyncLanding.png",
-  },
-  {
-    id: 3,
-    type: 'image' as const,
-    src: '/sssyncCore.png',
-  },
-];
+    {
+      id: 1,
+      type: 'youtube' as const,
+      src: 'https://www.youtube.com/embed/k_Ip3h0agso',
+    },
+    {
+      id: 2,
+      type: 'image' as const,
+      src: "/sssyncLanding.png",
+    },
+    {
+      id: 3,
+      type: 'image' as const,
+      src: '/sssyncCore.png',
+    },
+  ];
 
   return (
-    <div className="mb-15">
+    <div className="mb-15 md:mb-40">
       <div className="flex flex-col items-center justify-center bg-green-50 md:px-20 p-5 md:py-20 py-10">
         <div className="font-bold md:text-4xl md:pb-5 pb-1 text-black text-2xl">Sssync</div>
         <div className="text-black md:text-xl text-sm text-center">Say goodbye to stockouts & extra inventory. Seamlessly sync inventory across Shopify, Square, Clover, Amazon, and a network of local partners. Keep your stores stocked, partner with local stores, automate orders/fulfillment, all while saving time & money.</div>
       </div>
-        <MediaCarousel media={media}/>
+      <MediaCarousel media={media} />
       <div>
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
           What it does
@@ -52,14 +52,17 @@ export default function Sssync() {
           Tools Used
         </div>
         <div className="flex flex-row items-center px-5 lg:mx-40">
-          <Tools strings={tools}/>
+          <Tools strings={tools} />
         </div>
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
-          Links
+          Resources
         </div>
+        <ul className="px-10 lg:mx-40 hover:text-blue-400 list-disc">
+          <li>
+            <a href="https://www.sssync.app/" target="_blank">Sssync Landing page</a>
+          </li>
+        </ul>
       </div>
-
-
     </div>
   );
 }
