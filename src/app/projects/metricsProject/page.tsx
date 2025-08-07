@@ -7,14 +7,9 @@ export default function MetricsProject() {
 
   const media = [
     {
-      id: 2,
+      id: 1,
       type: 'image' as const,
       src: "/MetricsPhoto.png",
-    },
-    {
-      id: 3,
-      type: 'image' as const,
-      src: '/sssyncCore.png',
     },
   ];
 
@@ -29,34 +24,26 @@ export default function MetricsProject() {
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
           What it does
         </div>
-        <div className="px-5 lg:mx-40">SSSync offers powerful multi-platform inventory synchronization, allowing merchants to seamlessly connect and sync real-time inventory across Shopify, Square, Amazon, and Clover, with more platforms on the way. Its Shopify inventory widget displays real-time partner inventory availability without revealing exact counts, enhancing transparency while maintaining privacy. Through inventory sharing and automated order routing, users can seamlessly fulfill orders from partner stores when stock runs low. </div>
-        <div className="px-5 pt-5 lg:mx-40">The platform also plans to feature an inventory marketplace where businesses can buy and sell excess stock, complete with merchant ratings and support for nearby and perishable goods. Automated partnerships handle contracts, logistics, and payouts, freeing up time for growth. All activity is managed through a unified dashboard that consolidates orders, fulfillment, and analytics across an entire network.</div>
+        <div className="px-5 lg:mx-40">During my time at Robins Air Force Base, I was part of a team responsible for developing a comprehensive Metrics Dashboard — a web application designed to organize and visualize key data related to software development across multiple teams. The platform provides interactive graphs displaying the number of tickets and story points completed during each sprint cycle, broken down by team. One of its core features is secure access control: users must log in, and the data shown is tailored to their role or clearance level. Additionally, users with elevated permissions can edit or correct data to address discrepancies.
+ </div>
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
           Role
         </div>
-        <div className="px-5 lg:mx-40">My role in this project is both Project Manager and Frontend Engineer. This includes discussing and developing the layout of each page, modal, and smaller components like text, buttons, loading screens, and color schemes. All tasks are logged by me on Linear (our project board), and we have weekly meetings to discuss the app’s progress.</div>
+        <div className="px-5 lg:mx-40">In this project, I worked as a Full Stack Engineer, contributing to both the frontend and backend development of the application. On the frontend, I helped design and implement the layout for each page, including modals and reusable UI components such as buttons, loading screens, and typography, while also collaborating on the overall visual theme using Material UI. On the backend, I was responsible for creating new API endpoints, designing and integrating new database tables, and writing clear, developer-friendly API documentation. Throughout the project, I actively participated in daily standup meetings and sprint planning sessions, working closely with my team to break down tasks into tickets and keep our sprint board organized and up to date.</div>
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
           Accomplishments
         </div>
-        <div className="px-5 lg:mx-40">The app is currently still in development, and we are working toward releasing version 0 in the near future. So far, we have a functioning frontend, backend, and database, with most pages and modals implemented. We are still working on some features, such as autofill functionality, which will be completed soon. Overall, working on this project has helped me further develop my skills in app development—particularly using React Native. This includes learning how to improve performance and optimize for mobile displays.</div>
+        <div className="px-5 lg:mx-40">The website was successfully deployed and is now used by numerous employees at Robins AFB. This project gave me hands-on experience with large-scale software systems and working with complex, high-volume databases. I also became proficient in tools like GitLab, Material UI, and several other development technologies.</div>
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
           Challenges
         </div>
-        <div className="px-5 lg:mx-40">This app is one of the more complex projects I have worked on, especially when it comes to managing our workload as a small team. As a solution, we created a project board to manage all tasks, which has helped alleviate challenges related to workload distribution, goal-setting, and overall efficiency. </div>
+        <div className="px-5 lg:mx-40">Initially, working on such a large codebase was overwhelming — thousands of lines of code required careful navigation, debugging, and documentation. I had to quickly learn how to read and understand unfamiliar code written by other team members, maintain high-quality documentation, and thoroughly test new features and bug fixes. Over time, I adapted, significantly improving my ability to analyze and contribute to large collaborative projects.</div>
         <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
           Tools Used
         </div>
         <div className="flex flex-row items-center px-5 lg:mx-40">
           <Tools strings={tools} />
         </div>
-        <div className="text-2xl md:text-3xl font-bold p-5 md:py-10 lg:mx-40">
-          Resources
-        </div>
-        <ul className="px-10 lg:mx-40 hover:text-blue-400 list-disc">
-          <li>
-            <a href="https://www.sssync.app/" target='_blank'>Sssync Landing page</a>
-          </li>
-        </ul>
       </div>
     </div>
   );
