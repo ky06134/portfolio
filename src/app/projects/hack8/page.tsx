@@ -17,7 +17,7 @@ export default function Hack8() {
     {
       id: 2,
       type: 'image' as const,
-      src: "hack8winner.png",
+      src: "/portfolio/hack8winner.png",
     },
   ];
 

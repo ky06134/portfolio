@@ -5,23 +5,23 @@ type ToolsProps = {
 };
 
 const imageMap: Record<string, string> = {
-  figma: 'Figma.png',
-  react: 'React.png',
-  tailwind: 'Tailwind CSS.png',
-  typescript: '',
-  git: "Git.png",
-  linear: "linear.svg",
-  github: "Github.jpg",
-  mui: "Material UI.png",
-  gitlab: "GitLab.png",
-  python: "Python.png",
-  docker: "Docker.png",
-  html: "html.png",
-  javascript: "javascript.webp",
-  adobesdk: "adobe.png",
-  mongodb: "mongoDB.png",
-  javafx: "javaFX.png",
-  java: "java.png"
+  figma: '/portfolio/Figma.png',
+  react: '/portfolio/React.png',
+  tailwind: '/portfolio/Tailwind CSS.png',
+  typescript: '/portfolio/typescript.png',
+  git: "/portfolio/Git.png",
+  linear: "/portfolio/linear.svg",
+  github: "/portfolio/Github.jpg",
+  mui: "/portfolio/Material UI.png",
+  gitlab: "/portfolio/GitLab.png",
+  python: "/portfolio/Python.png",
+  docker: "/portfolio/Docker.png",
+  html: "/portfolio/html.png",
+  javascript: "/portfolio/javascript.webp",
+  adobesdk: "/portfolio/adobe.png",
+  mongodb: "/portfolio/mongoDB.png",
+  javafx: "/portfolio/javaFX.png",
+  java: "/portfolio/java.png"
   // Add more mappings as needed
 };
 

@@ -9,7 +9,7 @@ export default function Hack8() {
         {
             id: 1,
             type: 'image' as const,
-            src: "hack7project.png",
+            src: "/portfolio/hack7project.png",
         },
     ];
 

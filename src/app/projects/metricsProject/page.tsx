@@ -9,7 +9,7 @@ export default function MetricsProject() {
     {
       id: 1,
       type: 'image' as const,
-      src: "MetricsPhoto.png",
+      src: "/portfolio/MetricsPhoto.png",
     },
   ];
 

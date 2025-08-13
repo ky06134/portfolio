@@ -14,7 +14,7 @@ export default function Hack9() {
     {
       id: 2,
       type: 'image' as const,
-      src: "hack9.png",
+      src: "/portfolio/hack9.png",
     },
   ];
 
