@@ -14,12 +14,12 @@ export default function Sssync() {
     {
       id: 2,
       type: 'image' as const,
-      src: "/sssyncLanding.png",
+      src: "sssyncLanding.png",
     },
     {
       id: 3,
       type: 'image' as const,
-      src: '/sssyncCore.png',
+      src: 'sssyncCore.png',
     },
   ];
 

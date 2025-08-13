@@ -3,13 +3,13 @@ import Tools from "@/app/ui/tools";
 
 export default function MetricsProject() {
 
-  const tools = ["react", "git", "github", "mui", "Figma", 'gitlab']
+  const tools = ["react", "git", "github", "mui", "Figma", 'gitlab', 'python', 'docker']
 
   const media = [
     {
       id: 1,
       type: 'image' as const,
-      src: "/MetricsPhoto.png",
+      src: "MetricsPhoto.png",
     },
   ];
 
@@ -17,7 +17,7 @@ export default function MetricsProject() {
     <div className="mb-15 md:mb-40">
       <div className="flex flex-col items-center justify-center bg-blue-50 md:px-20 p-5 md:py-20 py-10">
         <div className="font-bold md:text-4xl md:pb-5 pb-1 text-black text-2xl">Metrics Project</div>
-        <div className="text-black md:text-xl text-sm text-center">Built to display important metrics on the software development process of teams at the Robins AFB</div>
+        <div className="text-black md:text-xl text-sm text-center">A dashboard web app used to track and visualize sprint metrics and development data across teams at Robins AFB</div>
       </div>
       <MediaCarousel media={media} />
       <div>

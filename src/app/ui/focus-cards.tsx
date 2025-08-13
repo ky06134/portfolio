@@ -32,30 +32,23 @@ export const Card = React.memo(
         router.push("projects/metricsProject");
       } 
       if (card.title === "UGA Hackathon 8: TappedIn") {
-        router.push("projects/sssync");
+        router.push("projects/hack8");
       } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
+      if (card.title === "UGA Hackathon 9: OpenMoji") {
+        router.push("projects/hack9");
       } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
+      if (card.title === "UGA Hackathon 7: Run The World") {
+        router.push("projects/hack7");
       } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
+      if (card.title === "UGA Software Engineering: Movie Booking Website") {
+        router.push("projects/movieBooking");
       } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
+      if (card.title === "Distributed Project") {
+        router.push("projects/distributed");
       } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
+      if (card.title === "UGA ACM: Marketplace") {
+        router.push("projects/acm");
       } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
-      } 
-      if (card.title === "Sssync.com") {
-        router.push("projects/sssync");
-      } 
-
     };
 
     return (

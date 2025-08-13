@@ -5,19 +5,28 @@ type ToolsProps = {
 };
 
 const imageMap: Record<string, string> = {
-  figma: '/Figma.png',
-  react: '/React.png',
-  tailwind: '/Tailwind CSS.png',
+  figma: 'Figma.png',
+  react: 'React.png',
+  tailwind: 'Tailwind CSS.png',
   typescript: '',
-  git: "/Git.png",
-  linear: "/linear.svg",
-  github: "/Github.jpg",
-  mui: "/Material UI.png",
-  gitlab: "/GitLab.png",
+  git: "Git.png",
+  linear: "linear.svg",
+  github: "Github.jpg",
+  mui: "Material UI.png",
+  gitlab: "GitLab.png",
+  python: "Python.png",
+  docker: "Docker.png",
+  html: "html.png",
+  javascript: "javascript.webp",
+  adobesdk: "adobe.png",
+  mongodb: "mongoDB.png",
+  javafx: "javaFX.png",
+  java: "java.png"
   // Add more mappings as needed
 };
 
 const linkMap: Record<string, string> = {
+  java: 'https://www.java.com/en/',
   figma: 'https://www.figma.com/',
   react: 'https://react.dev/',
   tailwind: 'https://tailwindcss.com/',
@@ -26,6 +35,13 @@ const linkMap: Record<string, string> = {
   linear: "https://linear.app/",
   github: "https://github.com/",
   mui: "https://mui.com/material-ui/",
+  docker: "https://www.docker.com/",
+  python: "https://www.python.org/",
+  html: "https://html.com/",
+  javascript: "https://www.javascript.com/",
+  adobesdk: "https://developer.adobe.com/creative-cloud/",
+  mongodb: "https://www.mongodb.com/",
+  javafx: "https://openjfx.io/",
   gitlab: "https://about.gitlab.com/beginners-guide-to-devops/?utm_medium=cpc&utm_source=google&utm_campaign=eg_global_dmp_x_x_en_gitlab_search_br_rlsa_global_exact&utm_content=beginners-guide-to-devops_x_x&utm_term=gitlab&_bt=725054247979&_bk=gitlab&_bm=e&_bn=g&_bg=148481441276&gad_source=1&gad_campaignid=20029282011&gbraid=0AAAAADcJCbcEMXT-fsvIkL4EbIOpUyyDR&gclid=CjwKCAjw-svEBhB6EiwAEzSdrtA97bsdFyU3DASeo424GxTwFMWKlGiZwrbtBp29lWCbbVuNaNVl8xoCgpsQAvD_BwE"
 };
 

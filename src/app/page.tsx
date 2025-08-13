@@ -82,6 +82,10 @@ return (
         <div className="font-mono font-extralight text-base md:text-3xl py-4">
           Software Developer Based Around Atlanta, GA
         </div>
+        <div>Mobile Number: 6789003354</div>
+        <div className="p-3 hover:border-1 rounded-xl">
+          <a href="mailto:kyang504@gmail.com">kyang504@gmail.com</a>
+        </div>
         <div className="flex h-40 w-full items-center justify-center">
           <Button
             onClick={onButtonClick}>

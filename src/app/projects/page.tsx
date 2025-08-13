@@ -29,20 +29,12 @@ export default function ProjectsPage() {
       src: "https://i.ytimg.com/vi/bjo-rn8R_4k/maxresdefault.jpg",
     },
     {
-      title: "Distributed Project 1",
-      src: "distributedProject1.png",
-    },
-    {
-      title: "Distributed Project 2",
-      src: "distributedProject1.png",
-    },
-    {
-      title: "Distributed Project 3",
+      title: "Distributed Project",
       src: "distributedProject1.png",
     },
     {
       title: "UGA ACM: Marketplace",
-      src: "distributedProject1.png",
+      src: "marketplace.png",
     },
   ];
 
@@ -53,8 +45,8 @@ export default function ProjectsPage() {
             <h1 className="font-bold font-serif pt-15 text-center bg-black bg-clip-text text-3xl sm:text-4xl md:text-5xl">
               My Projects
             </h1>
-            <p className="font-mono mt-4 text-center bg-clip-text text-lg sm:text-xl md:text-xl">
-              A List of Projects I have worked on throughout my life. See what I've accomplished so far.
+            <p className="font-mono mt-5 md:mt-10 text-center bg-clip-text text-lg sm:text-xl md:text-xl">
+              A list of projects I have worked on throughout my career. See what I've accomplished so far.
             </p>
           </div>
 
