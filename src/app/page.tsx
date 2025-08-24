@@ -47,7 +47,7 @@ const links = [
 ];
 
 const onButtonClick = () => {
-  const pdfUrl = "Computer Science Resume.pdf"
+  const pdfUrl = "Software_Developer_Resume-Kevin_Yang.pdf"
   const link = document.createElement("a")
   link.href = pdfUrl
   link.download = "Kevin_Yang_Resume.pdf"
